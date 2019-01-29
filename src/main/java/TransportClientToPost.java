@@ -58,8 +58,8 @@ public class TransportClientToPost {
 
     /* post by String
     String json = "{" +
-            "\"user\":\"kimchy\"," +
-            "\"postDate\":\"2013-01-30\"," +
+            "\"user\":\"vitalik\"," +
+            "\"postDate\":\"2019-01-30\"," +
             "\"message\":\"trying out Elasticsearch\"" +
             "}";
 
