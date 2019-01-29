@@ -21,7 +21,7 @@ public class TransportClientToDeleteByQuery {
                 .source("twitter") // index
                 .get(); //execute operation
         long deleted = response.getDeleted(); // number of deleted documents
-        System.out.println(response.toString());
+        System.out.println(response.toString() + " Deleted " + deleted + " documents");
 
         client.close();
 

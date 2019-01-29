@@ -32,7 +32,7 @@ public class TransportClientToPost {
             IndexResponse response = client.prepareIndex("twitter", "tweet", "1")
                     .setSource(jsonBuilder()
                             .startObject()
-                            .field("user", "vitalik")
+                            .field("name", "vitalik")
                             .field("postDate", new Date())
                             .field("message", "trying out elastic")
                             .endObject()).get();
@@ -49,8 +49,6 @@ public class TransportClientToPost {
             System.out.println(_index + _type + _id + _version + status);
             // shutdown
             client.close();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
