@@ -5,17 +5,13 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
 //import for elastic helper
 import static org.elasticsearch.common.xcontent.XContentFactory.*;
 
-import org.elasticsearch.common.xcontent.XContentBuilder;
-import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
 import java.io.IOException;
 import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+
 
 //The index API allows one to index a typed JSON document into a specific index and make it searchable.
 public class TransportClientToPost {
